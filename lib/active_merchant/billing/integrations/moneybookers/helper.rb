@@ -31,6 +31,7 @@ module ActiveMerchant #:nodoc:
           mapping :return_url_text, 'return_url_text'
           mapping :return_url_target, 'return_url_target'
           mapping :cancel_url_text, 'cancel_url_text'
+          mapping :cancel_url_target, 'cancel_url_target'
           mapping :status_url2, 'status_url2'
           mapping :language, 'language'
           mapping :hide_login, 'hide_login'
@@ -54,6 +55,13 @@ module ActiveMerchant #:nodoc:
           mapping :detail4_text, 'detail4_text'
           mapping :detail5_description, 'detail5_description'
           mapping :detail5_text, 'detail5_text'
+          mapping :dynamic_descriptor, 'dynamic_descriptor'
+
+          mapping :rec_period,       'rec_period'
+          mapping :rec_grace_period, 'rec_grace_period'
+          mapping :rec_cycle,        'rec_cycle'
+          mapping :rec_amount,       'rec_amount'
+          mapping :rec_status_url,   'rec_status_url'
 
           MAPPED_COUNTRY_CODES = {
             'SE' => 'SV',
